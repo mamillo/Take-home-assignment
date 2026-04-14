@@ -71,3 +71,13 @@ button:hover {
   background-color: rgb(10, 218, 10);
   color: black;
 }
+.orderdetails {
+  position: absolute;
+  border: 1px solid red;
+  padding: 10px;
+  left: 400px;
+  
+}
+h2 {
+  border-bottom: 1px solid red;
+}

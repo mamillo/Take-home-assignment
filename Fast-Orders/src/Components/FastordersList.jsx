@@ -37,13 +37,13 @@ function PurchaseOrderList({ setView, setSelectedOrder }) {
               <td>{order.supplierName}</td>
               <td>{order.itemName}</td>
               <td>{order.quantity}</td>
-              <td>{order.unitPrice}</td>
-              <td>{order.quantity * order.unitPrice}</td>
+              <td>Ksh {order.unitPrice}</td>
+              <td>Ksh {order.quantity * order.unitPrice}</td>
               <td>{order.status}</td>
               <td>{new Date(order.createdAt).toLocaleString()}</td>
               <td>
                 <button onClick={() => { setSelectedOrder(order); setView("details"); }}>View</button>
-                <button onClick={() => { setSelectedOrder(order); setView("create"); }}>Edit</button>
+                <button onClick={() => { setSelectedOrder(order); setView("edit"); }}>Edit</button>
                 <button onClick={() => handleDelete(order.id)}>Delete</button>
               </td>
             </tr>

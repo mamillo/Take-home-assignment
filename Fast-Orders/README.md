@@ -1,16 +1,41 @@
-# React + Vite
+Fast Orders Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full‑stack web application for managing purchase orders.
+Built with React (frontend) and Node.js + Express (backend).
 
-Currently, two official plugins are available:
+Setup instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend Setup Instructions
 
-## React Compiler
+1. Navigate to the frontend folder:
+cd Fast-Orders
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Install dependencies:
+npm install
+3. Ensure your API calls in api.js point to the backend:
+api.js
+const API_URL = "http://localhost:5000/purchase-orders";
 
-## Expanding the ESLint configuration
+Running the Frontend Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Start the React app:
+
+bash
+npm run dev
+
+2. The frontend will be available at:
+
+Code
+http://localhost:5174/
+(ctrl + right click to view the front end on your local host)
+
+- To ensure the frontend and the back end is connected:
+
+1. Backend must be running on http://localhost:5000.
+2. Frontend calls backend endpoints via fetch in api.js.
+3. CORS is enabled in backend ( app.use(cors()) ).
+4. Backend must be running before using the frontend.
+
+
+Authors
+Brandon (Frontend + Backend development)

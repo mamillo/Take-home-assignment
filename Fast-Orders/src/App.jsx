@@ -15,6 +15,7 @@ function App() {
         <FastordersList setView={setView} setSelectedOrder={setSelectedOrder} />
       )}
       {view === "create" && <Fastordersform setView={setView} />}
+      {view === "edit" && <Fastordersform setView={setView} order={selectedOrder} />}
       {view === "details" && (
         <Fastordersdetails order={selectedOrder} setView={setView} />
       )}
