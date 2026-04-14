@@ -33,8 +33,8 @@ function PurchaseOrderForm({ setView, order }) {
       <h2>{order ? "Edit Purchase Order" : "Create Purchase Order"}</h2>
       <input name="supplierName" placeholder="Supplier Name" value={form.supplierName} onChange={handleChange} required />
       <input name="itemName" placeholder="Item Name" value={form.itemName} onChange={handleChange} required />
-      <input type="number" name="quantity" placeholder="Quantity" value={form.quantity} onChange={handleChange} required />
-      <input type="number" name="unitPrice" placeholder="Unit Price" value={form.unitPrice} onChange={handleChange} required />
+      <input type="number" name="quantity" placeholder="Quantity" value={form.quantity} onChange={handleChange} required className="Quantity"/>
+      <input type="number" name="unitPrice" placeholder="Unit Price" value={form.unitPrice} onChange={handleChange} required className="unitprice-input"/>
       <select name="status" value={form.status} onChange={handleChange}>
         <option value="pending">Pending</option>
         <option value="approved">Approved</option>

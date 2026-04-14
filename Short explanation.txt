@@ -1,0 +1,24 @@
+Approach
+1. I Built a React frontend with components for listing, creating, and editing purchase orders. The frontend folder is named as Fast-Orders.
+2. I Designed a modular backend using Node.js and Express with clear separation of concerns:
+
+Routes handle endpoints.
+Controllers manage business logic.
+Models define data structure.
+
+3. I Connected frontend and backend via REST API calls (fetch), with CORS enabled for cross‑origin requests.
+
+4. I Used in‑memory storage for simplicity, focusing on CRUD functionality first before adding persistence.
+
+5. Iteratively debugged and refined setup (fixing package.json, correcting paths, ensuring server.js loads routes correctly).
+
+Trade-offs
+1. In‑memory storage vs database:
+Chose in‑memory storage initially for speed and simplicity. Trade‑off: data resets on server restart. A database would add persistence but increase setup complexity.
+
+
+2. Unit price input:
+Kept type="number" for validation but removed spinner arrows with CSS for cleaner UI. Trade‑off: lost quick increment/decrement functionality.
+
+3. Read Me
+Front end read me is on the Fast-Orders folder while the backend README is on the backend folder. This is to provide a proper guide on how to run both the front end and the back end separately.

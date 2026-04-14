@@ -81,3 +81,8 @@ button:hover {
 h2 {
   border-bottom: 1px solid red;
 }
+.unitprice-input::-webkit-inner-spin-button,
+.unitprice-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
